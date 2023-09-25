@@ -1,4 +1,4 @@
-
+package Osnove;
 
 public class ProblemOne {
     public static char findTheDiffirentChar(String s, String t){
