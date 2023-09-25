@@ -17,7 +17,7 @@ public class ProblemOne {
     }
     public static void main(String[] args) {
         String s = "abcde";
-        String t = "abcdefg";
+        String t = "brother";
 
         char uljez = findTheDiffirentChar(s,t);
         System.out.println(uljez);
