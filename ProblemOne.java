@@ -3,11 +3,12 @@
 public class ProblemOne {
     public static char findTheDiffirentChar(String s, String t){
         int[] brojPonaljanjaSlova = new int[26];
+        int maxLen = Math.max(s.length(), t.length());
 
-        for (int i = 0; i < s.length(); i++)
-            brojPonaljanjaSlova[s.charAt(i) - 'a'] ++;
-        for (int i = 0; i < t.length(); i++)
-            brojPonaljanjaSlova[t.charAt(i) - 'a'] ++;
+        for(int i = 0; i < maxLen; i++){
+            if(i < s.length())brojPonaljanjaSlova[s.charAt(i) - 'a']++;
+            if(i < t.length()) brojPonaljanjaSlova[t.charAt(i) - 'a']++;
+        }
 
         for (int i = 0 ; i < 26 ; i++){
             if(brojPonaljanjaSlova[i] != 2 && brojPonaljanjaSlova[i] != 0)
