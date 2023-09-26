@@ -7,6 +7,10 @@ import java.util.Stack;
 
 public class monotonicStack {
 
+    public static void stackUsage(){
+
+    }
+
     public static void main(String[] args) {
 
         int[] visineZgrada = new int[]{1,2,7,9,5,10};
