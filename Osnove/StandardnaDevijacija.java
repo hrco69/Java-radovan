@@ -9,7 +9,6 @@ public class StandardnaDevijacija {
 
         System.out.println( standardDeviation);
     }
-
     private static double calcualteSD(Integer[] integers) {
         double sum = 0, standardDeviation = 0;
         int len = integers.length;
